@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Biodata Diri</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#goals">Goals</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>S
+
+    <main>
+<aside class="profil-grid">
+    <div class="foto-container">
+        <img src="images/fotosaya.jpg" alt="Foto Saya" class="foto-profil">
+    </div>
+    <div class="data-diri">
+        <p><strong>NAMA:</strong> Muhammad Rizal Firdaus</p>
+        <p><strong>NIM:</strong> 2400018090</p>
+        <p><strong>KELAS:</strong> Pemrograman Web</p>
+    </div>
+</aside>
+
+
+        <article id="Goals">
+            <section id="tentang">
+                <h2>About</h2>
+                <p>Saya adalah mahasiswa uad yang sedang mengerjakan tugas tengah smester.</p>
+                <button class="btn-detail" onclick="tampilkanDetail()">Tampilkan Detail</button>
+                <div id="detail" style="display: none;">
+                    <p>Saya adalah bungsu dari 6 bersaudara saya lahir di riau kabupaten Bengkalis kota duri, 
+                      lahir pada tanggal 16 Mei 2005 dan skrg tepat di tanggal pengumpulan ini saya genap 20 tahun, 
+                      saya mempunyai banyak hobby yang salah satu nya adalah basket, gym dan dunia Combat sport, 
+                      saya sangat senang dengan olahraga apa pun tetapi yang saya tekunin 3 olahraga itu, saya bercita" menjadi pengusaha dan membanggakan mama, 
+                      target saya dalam perkuliahan ini lulus 4 tahun dan cumlaude.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Goals</h2>
+                <p>Saya ingin memperdalam CSS, HTML dan JAVA SCRIPT</p>
+<div class="ikon-web">
+    <i class="fab fa-html5 html-icon" title="HTML"></i>
+    <i class="fab fa-css3-alt css-icon" title="CSS"></i>
+    <i class="fab fa-js-square js-icon" title="JavaScript"></i>
+</div>
+
+            </section>
+        </article>
+    </main>
+
+    <footer id="kontak">
+        <p>&copy; 2025 Muhammad Rizal Firdaus | Kontak: 2400018090@webmail.uad.ac.id</p>
+    </footer>
+</body>
+
+<script>
+  function tampilkanDetail() {
+    const detail = document.getElementById('detail');
+    if (detail.style.display === 'none') {
+        detail.style.display = 'block';
+    } else {
+        detail.style.display = 'none';
+    }
+}
+
+</script>
+</html>
